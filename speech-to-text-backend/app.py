@@ -10,7 +10,7 @@ from pydub import AudioSegment
 # --- CONFIG ---
 load_dotenv()
 
-# Optional: if you extracted ffmpeg to a custom folder, set FFMPEG_PATH env var to that bin folder.
+# Optional: if you extracted ffmpeg to a custom folder, set FFMPEG_PATH env var to that bin folder
 ffmpeg_path = os.getenv("FFMPEG_PATH") or os.getenv("FFMPEG_BIN")
 if ffmpeg_path:
     os.environ["PATH"] += os.pathsep + ffmpeg_path
